@@ -1,0 +1,35 @@
+name: Package to Zip Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install zip -y
+
+    - name: Find .deb files and create zip
+      run: |
+        find . -name '*.deb' -exec cp --parents \{\} ./temp/ \;
+        zip -r packages.zip ./temp/
+
+    - name: Upload zip artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: package-zip
+        path: packages.zip
