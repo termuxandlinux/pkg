@@ -1,5 +1,5 @@
 {
-  "name": "shizuku",
+  "name": "termux-custom",
   "version": "1.0",
   "arch": "all",
   "maintainer": "Kevin Alexander <termuxandlinux@github.com>",
@@ -7,6 +7,6 @@
   "homepage": "https://beispielwebsite.com",
   "depends": ["bash"],
   "files": {
-    "main.sh": "/data/data/com.termux/files/usr/bin/adb"
+    "main.sh": "/data/data/com.termux/files/usr/bin/termux-custom"
   }
 }
