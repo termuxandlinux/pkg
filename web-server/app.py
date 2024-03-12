@@ -4,7 +4,7 @@ import sys
 import subprocess
 from flask import Flask
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 html_dir = os.path.join(os.getenv('HOME'), '.html')
 export_file = os.path.join(os.getenv('HOME'), 'export_ip_port.txt')
@@ -16,7 +16,7 @@ def start_server():
 def stop_server():
     subprocess.run(["pkill", "flask"])
 
-@app.route('/')
+@application.route('/')
 def index():
     return 'Hello, World!'
 
