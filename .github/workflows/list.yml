@@ -1,4 +1,4 @@
-name: Package to Zip Workflow
+name: Create List and Zip Workflow
 
 on:
   push:
@@ -13,23 +13,22 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
     - name: Install dependencies
       run: |
         sudo apt-get update
         sudo apt-get install zip -y
 
-    - name: Find .deb files and create zip
+    - name: Generate file list
       run: |
-        find . -name '*.deb' -exec cp --parents \{\} ./temp/ \;
-        zip -r packages.zip ./temp/
+        find . -type f > file_list.txt
+        jq -n 'reduce (inputs | . / "\n") as $line ({}; .[$line | rtrimstr("\r")] = 1)' file_list.txt > file_list.json
+
+    - name: Create zip file
+      run: |
+        zip -r data.zip file_list.txt file_list.json
 
     - name: Upload zip artifact
       uses: actions/upload-artifact@v2
       with:
-        name: package-zip
-        path: packages.zip
+        name: data-zip
+        path: data.zip
