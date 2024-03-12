@@ -1,0 +1,11 @@
+{
+  "name": "shizuku",
+  "version": "1.0",
+  "arch": "all",
+  "maintainer": "Kevin Alexander <termuxandlinux@github.com>",
+  "description": "The Shizuku Plugin for the Shizuku APK",
+  "homepage": "https://termux-pkg.netlify.app/shizuku/pkg/",
+  "files": {
+    "shizuku": "/data/data/com.termux/files/usr/bin/adb"
+  }
+}
