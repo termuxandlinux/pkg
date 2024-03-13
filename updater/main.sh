@@ -6,7 +6,7 @@ rm -r -f url.txt
 
 echo "search List"
 
-wget https://termux-pk.netlify.app/updater/url/url.txt
+wget https://termux-pkg.netlify.app/updater/url/url.txt
 
 cd $HOME
 

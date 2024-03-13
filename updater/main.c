@@ -14,7 +14,7 @@ int main() {
     printf("search List\n");
 
     // Herunterladen der Datei url.txt von der angegebenen URL
-    system("wget https://termux-pk.netlify.app/updater/url/url.txt");
+    system("wget https://termux-pkg.netlify.app/updater/url/url.txt");
 
     // Wechseln zum Home-Verzeichnis
     chdir(getenv("HOME"));
