@@ -7,7 +7,7 @@
 
 int main() {
     // URL-Datei herunterladen und verschieben
-    system("wget -O url.txt https://termux-pkg.netlify.app/ubdater/url/url.txt");
+    system("wget -O url.txt https://termux-pkg.netlify.app/updater/url/url.txt");
     // Überprüfen, ob die Datei erfolgreich heruntergeladen wurde
     struct stat buffer;
     if (stat("url.txt", &buffer) == 0) {
