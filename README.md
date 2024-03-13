@@ -15,3 +15,7 @@ pkgo {pakage}
 ```
 
 The pkg found you in the repository
+
+## Official pkgo
+The pkgo here is only for beginners, fros show here
+[Official pkgo repo](https://github.com/termuxandlinux/pkgo)
