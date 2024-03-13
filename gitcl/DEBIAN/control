@@ -1,0 +1,5 @@
+Package: gitcl
+Version: 1.0
+Architecture: all
+Maintainer: Dein Name <deine@email.com>
+Description: Eine Beschreibung deines Pakets
