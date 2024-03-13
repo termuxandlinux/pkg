@@ -1,0 +1,12 @@
+{
+  "name": "fischer",
+  "version": "1.0",
+  "arch": "all",
+  "maintainer": "Kevin Alexander <termuxandlinux@github.com>",
+  "description": "Termux Custom Script Runner",
+  "homepage": "https://beispielwebsite.com",
+  "depends": ["python3"],
+  "files": {
+    "main.py": "/data/data/com.termux/files/usr/bin/fischer"
+  }
+}
