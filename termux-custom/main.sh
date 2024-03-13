@@ -1,8 +1,5 @@
 #!/bin/bash
 
-mkdir $HOME/.termux/custom/
-
-chmod +x $HOME/.termux/custom/
 
 # Speichere den Namen der Datei, die als Argument übergeben wurde
 filename="$1"
