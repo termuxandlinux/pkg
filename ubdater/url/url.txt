@@ -1,0 +1,2 @@
+https://termux-pkg.netlify.app
+https://termux-distro.netlify.app
