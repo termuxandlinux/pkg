@@ -1,2 +1,3 @@
 https://termux-pkg.netlify.app
 https://termux-distro.netlify.app
+https://termux-creator.netlify.app
