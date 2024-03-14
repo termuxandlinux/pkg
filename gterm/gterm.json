@@ -1,0 +1,12 @@
+{
+  "name": "gterm",
+  "version": "1.0",
+  "arch": "all",
+  "maintainer": "alex <aled>",
+  "description": "alex",
+  "homepage": "alex",
+  "depends": ["bash"],
+  "files": {
+    "main.sh": "/data/data/com.termux/files/usr/bin/gterm"
+  }
+}
