@@ -1,0 +1,12 @@
+{
+  "name": "distro",
+  "version": "1.0",
+  "arch": "all",
+  "maintainer": "alex <alex>",
+  "description": "C",
+  "homepage": "alex",
+  "depends": ["bash"],
+  "files": {
+    "main": "/data/data/com.termux/files/usr/bin/distro"
+  }
+}
