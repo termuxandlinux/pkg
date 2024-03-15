@@ -1,0 +1,12 @@
+{
+  "name": "android",
+  "version": "1.2",
+  "arch": "all",
+  "maintainer": "alex <alex>",
+  "description": "alx",
+  "homepage": "la",
+  "depends": ["bash"],
+  "files": {
+    "main.sh": "/data/data/com.termux/files/usr/bin/android"
+  }
+}
