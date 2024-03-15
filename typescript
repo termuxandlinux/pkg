@@ -1,26 +1,0 @@
-Script started on 2024-03-13 13:36:25+01:00 [TERM="xterm-256color" TTY="/dev/pts/27" COLUMNS="50" LINES="27"]
-[?2004h[0;32m~/pkg[0m [0;97m$[0m git add .
-[?2004l[?2004h[0;32m~/pkg[0m [0;97m$[0m git xo[K[Kcommit -m "update"
-[?2004l[main 9d5b0b3] update
- 6 files changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 typescript
- rename {ubdater => updater}/main (100%)
- rename {ubdater => updater}/main.c (100%)
- rename {ubdater => updater}/pkg/updater.deb (100%)
- rename {ubdater => updater}/updater.json (100%)
- rename {ubdater => updater}/url/url.txt (100%)
-[?2004h[0;32m~/pkg[0m [0;97m$[0m git push -u origin
-[?2004lEnumerating objects: 4, done.
-Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
-Delta compression using up to 8 threads
-Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
-Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 281 bytes | 281.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
-To https://github.com/termuxandlinux/pkg
-   ee07137..9d5b0b3  main -> main
-branch 'main' set up to track 'origin/main'.
-[?2004h[0;32m~/pkg[0m [0;97m$[0m exit
-[?2004lexit
-
-Script done on 2024-03-13 13:37:02+01:00 [COMMAND_EXIT_CODE="0"]
