@@ -1,0 +1,12 @@
+{
+  "name": "android-studio",
+  "version": "1.2",
+  "arch": "all",
+  "maintainer": "alex <alex>",
+  "description": "alex",
+  "homepage": "alex",
+  "depends": ["openjdk-17"],
+  "files": {
+    "main.sh": "/data/data/com.termux/files/usr/bin/android-studio"
+  }
+}
