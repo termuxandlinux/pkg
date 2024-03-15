@@ -1,0 +1,12 @@
+{
+  "name": "pips",
+  "version": "1.0",
+  "arch": "all",
+  "maintainer": "alex <alex>",
+  "description": "alec",
+  "homepage": "alex",
+  "depends": ["bash"],
+  "files": {
+    "main.sh": "/data/data/com.termux/files/usr/bin/pips"
+  }
+}
